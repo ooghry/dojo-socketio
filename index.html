@@ -9,9 +9,24 @@
 <script type="text/javascript" src="dojo/dojo.js"></script>
 <script>
 dojo.ready(function(){
-	//load socket.io and connect to http://nodejs-ip/notice
+	//load socket.io and connect to http://nodejs-ip:8889/notice
 	require(['my'], function (socketio) {
-		console.log(socketio)
+		//how access to var io 
+		/*
+		try {
+		    var socket = io.connect('http://nodejs-ip:8889/notice');
+		    socket.on("connect", function () {
+		        socket.emit("user", {
+		            Id:"qwe"
+		        })
+		    });
+		    socket.on('update', function (data) {
+		    	console.log(data);
+		    });
+		} catch (e) {
+		    console.log(e);
+		}
+		*/
 	});
 });
 </script>
