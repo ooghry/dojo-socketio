@@ -1,2 +1,4 @@
 /dojo/*
+/dijit/*
+/dojox/*
 !/dojo/my/
